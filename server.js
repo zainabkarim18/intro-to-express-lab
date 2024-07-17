@@ -102,7 +102,8 @@ app.get('/hello/:index', (req, res) => {
   const colle = collectibles[index];
   
   if (index <= collectibles.length -1){
-    res.send(`Hello there, the item ia a <b>${colle.name}</b>! and the item price is <b>${colle.price}</b>.`);
+    "shiny ball? For 5.95" 
+    res.send(`So, you want the <b>${colle.name}</b>? For <b>${colle.price}</b>, it can be yours!`);
   }else{
     res.send(`This item is not yet in stock. Check back soon!`);
   }
